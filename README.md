@@ -5,9 +5,9 @@
 In this repository those files or programs are written which I learned while taking *C++* lessons online.
 
 >## **Contents** :
-### 1. Basics
-### 2. Patterns
-### 3. Basic Learner Questions (generally based on loops and conditionals)
+**1. Basics**
+**2. Patterns**
+**3. Basic Learner Questions (generally based on loops and conditionals)**
     * Temperature Scale Chnage
     * Decimal to Binary
     * Roots of a Quadratic Equation
