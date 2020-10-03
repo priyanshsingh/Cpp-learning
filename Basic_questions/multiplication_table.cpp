@@ -9,9 +9,9 @@ int main()
 
     cout << "Table of the number " << x << "is :\n";
 
-    for (int i = 0; i <= 10; i++)
+    for (int i = 1; i <= 10; i++)
     {
-        cout << x << "*" << i << "=" << x * i;
+        cout << x << "x" << i << "=" << x * i << "\n";
     }
     return 0;
 }
