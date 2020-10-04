@@ -18,5 +18,9 @@ In this repository those files or programs are written which I learned while tak
     * Factorial of a Number (with Loop)
     * Factorial of a Number (with Recursion)
     * Addition of Natural Numbers upto a number (with Recursion)
+    * Largest out of three numbers
+    * Swapping two variables
+         * With help of third variable
+         * Without help of third variable
 
 
