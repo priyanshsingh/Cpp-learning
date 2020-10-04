@@ -22,5 +22,7 @@ In this repository those files or programs are written which I learned while tak
     * Swapping two variables
          * With help of third variable
          * Without help of third variable
+    * Size of data types
+    * Area of a triangle from its sides
 
 
