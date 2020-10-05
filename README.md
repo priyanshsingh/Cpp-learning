@@ -5,7 +5,12 @@
 In this repository those files or programs are written which I learned while taking *C++* lessons online.
 
 >## **Contents** :
-1. Basics
+1. Fundamentals
+    * Hello World
+    * Data Types
+    * Conditionals
+    * Loops
+    * Arrays
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
