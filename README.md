@@ -5,7 +5,7 @@
 In this repository those files or programs are written which I learned while taking *C++* lessons online.
 
 >## **Contents** :
-1. Basics
+1. Fundamentals
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
