@@ -15,5 +15,5 @@ int main()
     printf("Weeks: %d\n", weeks);
     printf("Days: %d \n", days);
 
-    return;
+    return 0;
 }
