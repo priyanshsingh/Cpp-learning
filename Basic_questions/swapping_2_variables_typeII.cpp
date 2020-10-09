@@ -12,7 +12,7 @@ int main()
     cin >> b;
     cout << endl;
 
-    a = a + b; // a=1 , b=2 , a+b=3 , for b=1 ==> 3-2 i.e. a-b
+    a = a + b;
 
     b = a - b;
 
