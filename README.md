@@ -33,5 +33,6 @@ In this repository those files or programs are written which I learned while tak
     * Practical Questions based on I/O commands
     * Conditionals
     * Recursion
+    * toupper anf tolower functions
 
 
