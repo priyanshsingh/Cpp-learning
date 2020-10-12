@@ -3,7 +3,7 @@ using namespace std;
 
 int main()
 {
-    char myarray[2][2] = {{a, a}, {b, b}};
+    char myarray[2][2] = {{'a', 'a'}, {'b', 'b'}};
 
     for (int i = 0; i < 2; i++)
     {
