@@ -21,12 +21,12 @@ int main()
         cin >> B[i];
     }
     cout << endl;
-    cout << "Sum of Array A and Array B is = ";
+    cout << "Subtraction of Array A and Array B is = ";
 
     for (int i = 0; i < 3; i++)
     {
-        add[i] = A[i] + B[i];
-        cout << add[i];
+        sub[i] = A[i] - B[i];
+        cout << sub[i];
     }
     cout << endl;
 
