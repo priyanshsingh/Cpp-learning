@@ -11,6 +11,8 @@ In this repository those files or programs are written which I learned while tak
     * Conditionals
     * Loops
     * Arrays
+         * 2-D Arrays
+         * Matrix opertions
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
