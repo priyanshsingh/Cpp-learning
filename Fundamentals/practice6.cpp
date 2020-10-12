@@ -5,7 +5,7 @@ int main()
 {
     int A[3];
     int B[3];
-    int add[3];
+    int sub[3];
 
     cout << "Enter three integers for Array A = ";
 
