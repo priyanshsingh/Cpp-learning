@@ -3,14 +3,17 @@ using namespace std;
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
-    cout << "\nThe entered numbers are = \n";
+    int arr[] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 
-    for (int i = 0; i < 5; i++)
+    int n = sizeof(arr) / sizeof(arr[0]);
+
+    cout << "Enter " << n << " numberes = ";
+
+    for (int i = 0; i < n; i++)
     {
-        cout << arr[i];
-        cout << "\n";
+        cin >> arr[n];
     }
+    cout << "\n";
 
     return 0;
 }
