@@ -16,8 +16,9 @@ int main()
 
     for (int j = 0; j <= 255; j++)
     {
-        cout << j << ". " << x[j] << "\n";
+        cout << j << ". " << x[j] << "\n    ";
     }
+    cout << endl;
 
     return 0;
 }
