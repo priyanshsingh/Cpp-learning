@@ -13,6 +13,12 @@ In this repository those files or programs are written which I learned while tak
     * Arrays
          * 2-D Arrays
          * Matrix input and operations
+    * Pointers
+    * Digital Memory Allocation
+    * Functions
+         * Inline Functions
+         * Function Overloading
+         * Control Flow through functions
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
