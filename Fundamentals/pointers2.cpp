@@ -12,6 +12,7 @@ int main()
     q = &d;
 
     cout << p << endl;
+    cout << (p + 1) << endl;
     cout << q << endl;
     return 0;
 }
