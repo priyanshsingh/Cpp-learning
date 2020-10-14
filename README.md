@@ -14,7 +14,7 @@ In this repository those files or programs are written which I learned while tak
          * 2-D Arrays
          * Matrix input and operations
     * Pointers
-    * Digital Memory Allocation
+    * Dynamic Memory Allocation
     * Functions
          * Inline Functions
          * Function Overloading
