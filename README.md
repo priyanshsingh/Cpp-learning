@@ -2,7 +2,7 @@
 
 ># **C++ Online Learning**
 
-In this repository those files or programs are written which I learned while taking *C++* lessons online.
+In this repository those files or programs are written which I learned while taking *C* and *C++* lessons online.
 
 >## **Contents** :
 1. Fundamentals
