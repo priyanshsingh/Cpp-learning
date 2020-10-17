@@ -20,11 +20,11 @@ int main()
 
     printf("4. a ^ b = %d\n", a ^ b);
 
-    printf("5. ~ a  = %d\n", a = ~a);
+    printf("5. b << 1 = %d\n", b << 1);
 
-    printf("6. b << 1 = %d\n", b << 1);
+    printf("6. b >> 1 = %d\n", b >> 1);
 
-    printf("7. b >> 1 = %d\n", b >> 1);
+    printf("\n****************************\n", a, b);
 
     return 0;
 }
