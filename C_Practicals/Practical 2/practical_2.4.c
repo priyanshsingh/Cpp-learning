@@ -2,44 +2,74 @@
 
 int main()
 {
-    int m, n;
-    printf("Enter month whose last day is friday = ");
-    scanf("%d", &m);
+    int month, day, x;
+    printf("Enter month number whose last day is friday [1 - 12] = ");
+    scanf("%d", &month);
     printf("\n");
 
-    printf("Enter number of day which you want = ");
-    scanf("%d", &n);
+    printf("Enter day whose week day is required [1 - 31] = ");
+    scanf("%d", &day);
     printf("\n");
 
-    int y = m - n;
-    if (y == 1 || 8 || 15 || 22 || 29)
+    int month_type = -1;
+
+    if (month == 1 || month == 3 || month == 5 || month == 7 || month == 8 || month == 10 || month == 12)
     {
-        printf("\nDay is Thursday");
+        month_type = 31;
     }
-    if (y == 2 || 9 || 16 || 23 || 30)
+    else if (month == 4 || month == 6 || month == 9 || month == 11)
     {
-        printf("\nDay is Wednesday");
-    }
-    if (y == 3 || 10 || 17 || 24)
-    {
-        printf("\nDay is Tuesday");
-    }
-    if (y == 4 || 11 || 18 || 25)
-    {
-        printf("\nDay is Monday");
-    }
-    if (y == 5 || 12 || 19 || 26)
-    {
-        printf("\nDay is Sunday");
-    }
-    if (y == 6 || 13 || 20 || 27)
-    {
-        printf("\nDay is Saturday");
+        month_type = 30;
     }
     else
     {
-        printf("\nDay is Friday");
+        month_type = 28;
+    }
+    int first_week_day = -1;
+    if (month_type == 31)
+    {
+        first_week_day = 2;
+    }
+    else if (month_type == 30)
+    {
+        first_week_day = 3;
+    }
+    else
+    {
+        first_week_day = 5;
     }
 
+    int ans = day % 7 + first_week_day;
+    if (ans >= 7)
+        ans = ans % 7;
+
+    printf("\nIt's ");
+    switch (ans)
+    {
+    case 0:
+        printf("Sunday!");
+        break;
+    case 1:
+        printf("Monday!");
+        break;
+    case 2:
+        printf("Tuesday!");
+        break;
+    case 3:
+        printf("Wednesday!");
+        break;
+    case 4:
+        printf("Thursday!");
+        break;
+    case 5:
+        printf("Friday!");
+        break;
+    case 6:
+        printf("Saturday!");
+        break;
+    default:
+        printf("ERROR!");
+        break;
+    }
     return 0;
 }
