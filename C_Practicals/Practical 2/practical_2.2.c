@@ -1,4 +1,4 @@
-/*Inside the CPU, mathematical operations like addition, subtraction, multiplication and division are done in bit-level.
+/*Practical 2.1 - Inside the CPU, mathematical operations like addition, subtraction, multiplication and division are done in bit-level.
 To perform bit-level operations in C programming, bitwise operators are used.
 Apply the knowledge you gained while learning bitwise operators.*/
 
