@@ -1,6 +1,7 @@
 // Program 1:
 
 #include <stdio.h>
+#include <math.h>
 
 int main()
 {
@@ -22,6 +23,26 @@ int main()
     int no_of_boys = (q * n) / (p + q);
     printf("\n\nNumber of boys = %d", no_of_boys);
     printf("\nNumber of girls = %d", no_of_girls);
+    printf("\n");
+
+    int diff = abs(no_of_boys - no_of_girls);
+
+    if (boys >= 70)
+    {
+        printf("\nGender partiality in Education\n");
+    }
+    else if (girls >= 70)
+    {
+        printf("\nGirls dominating in Education\n");
+    }
+    else if (diff <= 5)
+    {
+        printf("\nEqual opportunities for both in Education\n");
+    }
+    else
+    {
+        printf("Hello %d", diff);
+    }
 
     return 0;
 }
