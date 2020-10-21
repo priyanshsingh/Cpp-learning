@@ -37,6 +37,7 @@ In this repository those files or programs are written which I learned while tak
          * Without help of third variable
     * Size of data types
     * Area of a triangle from its sides
+    * Any day of any month whose last day is friday
 4. C Practicals
     * Practical Questions based on I/O commands
     * Practical Questions based on Functions
