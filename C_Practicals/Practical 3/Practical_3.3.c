@@ -44,17 +44,17 @@ int main()
 
     printf("\n********************************************\n\n");
 
-    int l = (a1 - s1);
-    int m = (a2 - s2);
-    int n = (a3 - s3);
+    int a = (a1 - s1);
+    int b = (a2 - s2);
+    int c = (a3 - s3);
 
-    printf("Money left with Amba = %d", l);
+    printf("Money left with Amba = %d", a);
     printf("\n");
 
-    printf("Money left with Ambaika = %d", m);
+    printf("Money left with Ambaika = %d", b);
     printf("\n");
 
-    printf("Money left with Ambalika = %d", n);
+    printf("Money left with Ambalika = %d", c);
     printf("\n");
 
     return 0;
