@@ -57,7 +57,7 @@ int main()
     printf("Money left with Ambalika = %d", c);
     printf("\n");
 
-    (a > b) ? (a > c) ? printf("Amba has max amount") : printf("Ambalika has max amount") : (b > c) ? printf("Ambaika has max amount") : printf("Ambalika has max amount");
+    (a > b) ? (a > c) ? printf("Amba has max amount of %d"), a : printf("Ambalika has max amount of %d"), c : (b > c) ? printf("Ambaika has max amount of %d"), b : printf("Ambalika has max amount of %d"), c;
 
     return 0;
 }
