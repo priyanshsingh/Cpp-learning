@@ -18,6 +18,18 @@ int main()
     cout << endl
          << "Vol of the sphere 2 is = " << vol2;
 
-         
+    if (vol1 > vol2)
+    {
+        cout << "\nSphere 1 has larger volume";
+    }
+    else if (vol1 == vol2)
+    {
+        cout << "\nSphere 1 and sphere 2 have equal volume";
+    }
+    else
+    {
+        cout << "\nSphere 2 has larger volume";
+    }
+
     return 0;
 }
