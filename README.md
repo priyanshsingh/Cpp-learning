@@ -44,6 +44,7 @@ In this repository those files or programs are written which I learned while tak
     * Perfect square just greater than n
     * Volume of sphere
     * Volume comparision
+    * Volume of cube
 4. C Practicals
     * Practical Questions based on I/O commands
     * Practical Questions based on Functions
