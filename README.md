@@ -23,7 +23,7 @@ In this repository those files or programs are written which I learned while tak
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
-3. Basic Learner Questions (generally based on loops and conditionals)
+3. Basic Learner Questions (generally based on loops and conditionals
     * Temperature Scale Chnage
     * Decimal to Binary
     * Roots of a Quadratic Equation
@@ -39,6 +39,7 @@ In this repository those files or programs are written which I learned while tak
     * Size of data types
     * Area of a triangle from its sides
     * Any day of any month whose last day is friday
+    * Leap year
 4. C Practicals
     * Practical Questions based on I/O commands
     * Practical Questions based on Functions
