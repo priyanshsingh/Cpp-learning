@@ -42,6 +42,7 @@ In this repository those files or programs are written which I learned while tak
     * Leap year
     * Pallindrome checker
     * Perfect square just greater than n
+    * Volume of sphere
 4. C Practicals
     * Practical Questions based on I/O commands
     * Practical Questions based on Functions
