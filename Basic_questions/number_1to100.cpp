@@ -8,14 +8,9 @@ int main()
     cin >> n;
     cout << endl;
 
-    if (n >= 1 || n < 10)
+    for (int i = 0; i == n; i++)
     {
-        cout << "Number is between 1 and 10";
-    }
-
-    else if (n >= 10 || n < 20)
-    {
-        cout << "Number is between 10 and 20";
+        cout << "Enteren number was = " << i;
     }
 
     return 0;
