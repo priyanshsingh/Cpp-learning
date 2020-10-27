@@ -14,5 +14,8 @@ int main()
     }
     cout << "Entered number is = " << result;
 
+    if (result < 10)
+        cout << "\nEntered number is between 1 - 10";
+
     return 0;
 }
