@@ -12,7 +12,6 @@ int main()
     {
         result = i;
     }
-    cout << "Entered number is = " << result;
 
     if (result < 10)
         cout << "\nEntered number is between 1 - 10";
@@ -41,8 +40,13 @@ int main()
     else if (result >= 80 && result < 90)
         cout << "\nEntered number is between 80 - 90";
 
-    if (result > 90)
+    else if (result >= 90 && result < 100)
         cout << "\nEntered number is between 90 - 100";
+
+    else
+        cout << "\nEnter a valid number which is between 1 and 100";
+
+    cout << "\nEntered number is = " << result;
 
     return 0;
 }
