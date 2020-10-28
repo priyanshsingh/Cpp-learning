@@ -1,37 +1,35 @@
-// Program 1:
-
 #include <stdio.h>
 #include <math.h>
 
 int main()
 {
-    float p, q, girls, boys;
+    float a, p, q, girls, boys;
+
+	printf("Enter total students = ");
+    scanf("%f", &a);
 
     printf("Enter ratio of girls/boys = ");
-    scanf("%d%d", &p, &q);
-    girls = (p * 100) / (p + q);
+    scanf("%f%f", &p, &q);
+    girls = (p * a) / (p + q);
 
     printf("\nPercentage of girls = %0.2f", girls);
-    boys = (q * 100) / (p + q);
+    boys = (q * a) / (p + q);
     printf("\nPercentage of boys = %0.2f", boys);
 
-    int n = girls + boys;
-
-    printf("\n\nTotal Students in Class = %d", n);
-
-    int no_of_girls = (p * n) / (p + q);
-    int no_of_boys = (q * n) / (p + q);
-    printf("\n\nNumber of boys = %d", no_of_boys);
-    printf("\nNumber of girls = %d", no_of_girls);
+    int per_boys = (boys * 100) / (boys + girls);
+	int per_girls = (girls * 100) / (boys + girls);    
+    
+	printf("\n\nPercentage of boys = %d", per_boys);
+    printf("\nPercentage of girls = %d", per_girls);
     printf("\n");
 
-    int diff = abs(no_of_boys - no_of_girls);
+    int diff = abs(boys - girls);
 
-    if (boys >= 70)
+    if (per_boys >= 70)
     {
         printf("\nGender partiality in Education\n");
     }
-    else if (girls >= 70)
+    else if (per_girls >= 70)
     {
         printf("\nGirls dominating in Education\n");
     }
@@ -41,7 +39,7 @@ int main()
     }
     else
     {
-        printf("Hello %d", diff);
+        printf("No conclusion can be drawn.");
     }
 
     return 0;
