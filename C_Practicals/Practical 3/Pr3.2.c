@@ -9,12 +9,12 @@ int main()
     printf("Enter a choice between 1 - 4 = ");
     scanf("%d", &x);
 
+    printf("\nEnter a number = ");
+    scanf("%d", &a);
+
     switch (x)
     {
     case 1:
-        printf("Enter a number = ");
-        scanf("%d", &a);
-
         if (a % 2 == 0)
         {
             printf("\nThe number is: EVEN");
@@ -26,9 +26,6 @@ int main()
         break;
 
     case 2:
-        printf("Enter a number = ");
-        scanf("%d", &a);
-
         if (a > 0)
         {
             printf("The number is: POSITIVE");
@@ -44,16 +41,10 @@ int main()
         break;
 
     case 3:
-        printf("Enter a number = ");
-        scanf("%d", &a);
-
         printf("\nSquare of is = %d", a * a);
         break;
 
     case 4:
-        printf("Enter a number = ");
-        scanf("%d", &a);
-
         float m;
         m = sqrt(a);
         printf("\nSquare Root of %d is = %0.2f", a, m);
