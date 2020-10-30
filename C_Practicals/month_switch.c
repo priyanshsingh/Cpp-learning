@@ -33,8 +33,11 @@ int main()
     case 11:
         printf("30 DAYS");
         break;
+    case 2:
+        printf("28/29 DAYS");
+        break;
     default:
-        printf("28 DAYS");
+        printf("Wrong input");
         break;
     }
     return 0;
