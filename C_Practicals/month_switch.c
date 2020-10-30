@@ -37,4 +37,5 @@ int main()
         printf("28 DAYS");
         break;
     }
+    return 0;
 }
