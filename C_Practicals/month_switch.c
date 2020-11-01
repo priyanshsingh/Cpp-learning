@@ -40,5 +40,6 @@ int main()
         printf("Wrong input");
         break;
     }
+
     return 0;
 }
