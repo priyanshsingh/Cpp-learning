@@ -18,4 +18,6 @@ int main()
         printf("Incorrect input");
         break;
     }
+
+    return 0;
 }
