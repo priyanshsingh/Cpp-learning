@@ -9,6 +9,8 @@ In this repository those files or programs are written which I learned while tak
     * Hello World
     * Presidency series
     * Data Types
+    * Operators
+         * Hello
     * Conditionals
     * Loops
     * Arrays
