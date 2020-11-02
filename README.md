@@ -12,6 +12,7 @@ In this repository those files or programs are written which I learned while tak
     * Operators
          * Unary
          * Arithmetic
+         * Relational
     * Conditionals
     * Loops
     * Arrays
