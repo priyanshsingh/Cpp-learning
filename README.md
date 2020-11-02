@@ -15,7 +15,8 @@ In this repository those files or programs are written which I learned while tak
          * Relational
          * Logical
          * Bitwise
-
+         * Assignment
+         * 
     * Conditionals
     * Loops
     * Arrays
