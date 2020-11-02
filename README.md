@@ -11,7 +11,7 @@ In this repository those files or programs are written which I learned while tak
     * Data Types
     * Operators
          * Unary
-
+         * Arithmetic
     * Conditionals
     * Loops
     * Arrays
