@@ -7,7 +7,7 @@ In this repository those files or programs are written which I learned while tak
 >## **Contents** :
 1. Fundamentals
     * Hello World
-    * Presidency series
+    * Presidency / Priority series
     * Data Types
     * Operators
          * Unary
