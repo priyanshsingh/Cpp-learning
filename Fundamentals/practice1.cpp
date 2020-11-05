@@ -3,13 +3,10 @@ using namespace std;
 
 int main()
 {
-    int arr[5] = {1, 2, 3, 4, 5};
-    cout << "\nThe entered numbers are = \n";
-
-    for (int i = 0; i < 5; i++)
+    int arr[15] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15};
+    for (int i = 0; i <= 14; i++)
     {
-        cout << arr[i];
-        cout << "\n";
+        cout << arr[i] << endl;
     }
 
     return 0;
