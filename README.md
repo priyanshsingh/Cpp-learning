@@ -57,6 +57,7 @@ In this repository those files or programs are written which I learned while tak
 4. C Practicals
     * Practical Questions based on I/O commands
     * Practical Questions based on Functions
+    * Loops
     * Conditionals
     * Recursion
     * toupper anf tolower functions
