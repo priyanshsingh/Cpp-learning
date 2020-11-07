@@ -60,6 +60,7 @@ In this repository those files or programs are written which I learned while tak
     * Loops
          * For Loop
          * While Loop
+         * Do While Loop
     * Conditionals
     * Recursion
     * toupper anf tolower functions
