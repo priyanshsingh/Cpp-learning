@@ -58,6 +58,8 @@ In this repository those files or programs are written which I learned while tak
     * Practical Questions based on I/O commands
     * Practical Questions based on Functions
     * Loops
+         * For Loop
+
     * Conditionals
     * Recursion
     * toupper anf tolower functions
