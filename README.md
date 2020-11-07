@@ -59,7 +59,7 @@ In this repository those files or programs are written which I learned while tak
     * Practical Questions based on Functions
     * Loops
          * For Loop
-
+         * While Loop
     * Conditionals
     * Recursion
     * toupper anf tolower functions
