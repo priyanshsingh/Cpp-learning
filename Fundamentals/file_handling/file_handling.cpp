@@ -8,7 +8,7 @@ int main()
     cout << "\nEnter Your Name and Age = ";
     cin.getline(arr, 100);
 
-    ofstream myfile("file_handling1.txt");
+    fstream myfile("file_handling1.txt", ios::out | ios::app);
     myfile << arr;
     myfile.close();
 
