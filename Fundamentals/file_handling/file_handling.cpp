@@ -14,5 +14,14 @@ int main()
 
     cout << "\nFile Write task completed successfully !!!\n";
 
+    cout << "\nFile Read task Initiated !!!\n";
+
+    char arr1[100];
+    ifstream newfile("file_handling1.txt");
+    newfile.getline(arr1, 100);
+
+    cout << "Array contain = " << arr1 << endl;
+    cout << "\nFile Read task completed successfully !!!\n";
+
     return 0;
 }
