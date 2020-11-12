@@ -28,7 +28,8 @@ In this repository those files are consisted which I made while taking *C* and *
          * Inline Functions
          * Function Overloading
          * Control Flow through functions
-    * Structures     
+    * Structures
+    * Arrays in Structures
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
