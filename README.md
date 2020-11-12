@@ -30,6 +30,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Control Flow through functions
     * Structures
     * Arrays in Structures
+    * Fstream Header file 
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
