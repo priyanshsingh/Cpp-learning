@@ -76,5 +76,6 @@ In this repository those files are consisted which I made while taking *C* and *
     * Problem solving by making expressions from give info.
     * Adding libraries like math.h and conio.h
     * Using Random Function
-
+    * Used Structures
+    
 
