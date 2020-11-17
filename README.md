@@ -68,6 +68,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * For Loop
          * While Loop
          * Do While Loop
+    * Binary Code
     * Conditionals
     * Recursion
     * toupper anf tolower functions
