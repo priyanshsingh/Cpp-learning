@@ -68,5 +68,8 @@ int main()
     car1.display_data();
     car2.display_data();
 
+    Cars car3 = car1;
+    car3.display_data();
+
     return 0;
 }
