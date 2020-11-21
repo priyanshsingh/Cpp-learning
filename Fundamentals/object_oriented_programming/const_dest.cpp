@@ -15,6 +15,11 @@ public:
     Cars()
     {
         cout << "Default Constructor Called\n";
+        company_name = "TOYOTA";
+        model_name = "ALTIS";
+        fuel_type = "PETROL";
+        mileage = 12.2;
+        price = 1500000;
     }
 
     void set_data(string cname, string mname, string ftype, float m, double p)
@@ -40,8 +45,7 @@ public:
 
 int main()
 {
-    Cars car1, car2;
-    car1.set_data("Toyota", "Altis", "Petrol", 22.00, 1500000);
+    Cars car1;
     car1.display_data();
 
     return 0;
