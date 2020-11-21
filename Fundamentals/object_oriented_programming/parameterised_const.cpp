@@ -17,8 +17,9 @@ public:
         company_name = "TOYOTA";
     }
 
-    Cars(string mname, string ftype, float m, double p) //PARAMETERISED CONSTRUCTOR
+    Cars(string cname, string mname, string ftype, float m, double p) //PARAMETERISED CONSTRUCTOR
     {
+        company_name = cname;
         model_name = mname;
         fuel_type = ftype;
         mileage = m;
@@ -50,7 +51,7 @@ public:
 
 int main()
 {
-    Cars car1, car2("Fortuner", "Disel", 12, 3500000);
+    Cars car1, car2("Toyota", "Fortuner", "Disel", 12, 3500000);
     car1.display_data();
     car2.display_data();
 
