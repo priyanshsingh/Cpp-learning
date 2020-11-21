@@ -60,6 +60,11 @@ public:
         cout << "Price = " << price << endl
              << endl;
     }
+
+    ~Cars() //DESTRUCTOR
+    {
+        cout << "\n\nDestructor Called!!!\n\n";
+    }
 };
 
 int main()
