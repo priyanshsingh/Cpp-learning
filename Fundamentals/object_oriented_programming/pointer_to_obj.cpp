@@ -18,7 +18,7 @@ public:
     }
     void display_data()
     {
-        cout << "Complex Number is " << real << " + " << img << "i " << endl;
+        cout << "Complex Number is " << real << ((img > 0) ? " + " : " - ") << abs(img) << "i " << endl;
     }
     int get_real()
     {
@@ -43,7 +43,7 @@ Complex_numbers add_num(Complex_numbers a, Complex_numbers b)
 
 int main()
 {
-    Complex_numbers comp1(5, 4), comp2(3, 7), comp3;
+    Complex_numbers comp1(5, 4), comp2(3, -7), comp3;
     comp1.display_data();
     comp2.display_data();
     comp3 = add_num(comp1, comp2);
