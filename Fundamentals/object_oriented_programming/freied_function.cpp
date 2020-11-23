@@ -27,6 +27,8 @@ int main()
 {
     Distance d1;
     d1.display_data();
+    cout << endl
+         << endl;
     addValue(d1);
     d1.display_data();
 
