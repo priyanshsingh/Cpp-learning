@@ -50,7 +50,7 @@ int main()
     comp3 = add_num(comp1, comp2);
     comp3.display_data();
 
-    cout << "Pointer to object !!!\n";
+    cout << "Pointer to object !!!\nx";
     Complex_numbers *ptr1;
     ptr1 = &comp3;
     ptr1->display_data();
