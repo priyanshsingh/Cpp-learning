@@ -36,6 +36,8 @@ In this repository those files are consisted which I made while taking *C* and *
     * Differences in POP and OOP
     * Object Oriented Programming
          * Default Constructors
+         * Copy Constructors
+
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
