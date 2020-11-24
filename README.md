@@ -37,7 +37,7 @@ In this repository those files are consisted which I made while taking *C* and *
     * Object Oriented Programming
          * Default Constructors
          * Copy Constructors
-
+         * Parameterized Constructors
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
