@@ -39,6 +39,8 @@ In this repository those files are consisted which I made while taking *C* and *
          * Copy Constructors
          * Parameterized Constructors
          * Destructors
+         * Friend Function
+
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
