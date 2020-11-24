@@ -39,6 +39,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Copy Constructors
          * Parameterized Constructors
          * Destructors
+         * Pointers to Object
          * Friend Function
 
 2. Patterns
