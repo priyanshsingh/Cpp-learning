@@ -29,8 +29,8 @@ In this repository those files are consisted which I made while taking *C* and *
          * Function Overloading
          * Control Flow through functions
     * Structures
-    * Arrays in Structures
-    * Pointers in Structures
+         * Arrays in Structures
+         * Pointers in Structures
     * Fstream Header file 
          * Ifstream
          * Ofstream
