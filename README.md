@@ -40,7 +40,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Parameterized Constructors
          * Destructors
          * Pointers to Object
-         * Friend Function
+         * Friend Functions
 
 2. Patterns
     * Simple Right Angled Triangle Pattern
