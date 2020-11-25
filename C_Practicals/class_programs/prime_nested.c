@@ -1,15 +1,21 @@
 #include <stdio.h>
 int main()
 {
-    int fact = 1;
-    for (int x = 2; x <= 10; x++)
+    for (int i = 2; i <= 100; i++)
     {
-        printf("Factorial of %d: ", x);
-        for (int y = x; y >= 1; y--)
+        int divisors = 0;
+        for (int j = 2; j < (i / 2) + 1; j++)
         {
-            fact *= y;
+            if (i % j == 0)
+            {
+                divisors++;
+            }
+            if (divisors >= 1)
+                break;
         }
-        printf("%d\n", fact);
-        fact = 1;
+        if (divisors == 0)
+            printf("%d\n", i);
     }
+
+    return 0;
 }
