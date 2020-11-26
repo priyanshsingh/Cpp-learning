@@ -48,6 +48,7 @@ In this repository those files are consisted which I made while taking *C* and *
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
+    * Number Patterns
 3. Basic Learner Questions (generally based on loops and conditionals
     * Temperature Scale Chnage
     * Decimal to Binary
