@@ -29,15 +29,26 @@ In this repository those files are consisted which I made while taking *C* and *
          * Function Overloading
          * Control Flow through functions
     * Structures
-    * Arrays in Structures
+         * Arrays in Structures
+         * Pointers in Structures
     * Fstream Header file 
          * Ifstream
          * Ofstream
     * Differences in POP and OOP
     * Object Oriented Programming
+         * Classes
+         * Objects
+         * Default Constructors
+         * Copy Constructors
+         * Parameterized Constructors
+         * Destructors
+         * Pointers to Object
+         * Friend Functions
+
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
+    * Number Patterns
 3. Basic Learner Questions (generally based on loops and conditionals
     * Temperature Scale Chnage
     * Decimal to Binary

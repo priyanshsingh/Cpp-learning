@@ -12,11 +12,11 @@ int main()
         {
             if (j < 4 - i)
             {
-                cout << "-";
+                cout << " ";
             }
             else
             {
-                cout << "*";
+                cout << i;
             }
         }
         cout << endl;
