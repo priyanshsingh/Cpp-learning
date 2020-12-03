@@ -18,6 +18,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Assignment
          * Terenary Or Conditional
     * Conditionals
+    * Hoto Statements
     * Loops
     * Arrays
          * 2-D Arrays
