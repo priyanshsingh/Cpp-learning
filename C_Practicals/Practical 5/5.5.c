@@ -19,10 +19,10 @@ int main()
     printf("Enter details of %d students", n);
     for (int i = 0; i < n; i++)
     {
-        printf("\nDistance in kms for student number %d = ", i + 1);
+        printf("\nDistance in kilometers for student number %d = ", i + 1);
         scanf("%f", &diatance[i]);
 
-        printf("Time in hour = ");
+        printf("Time in hours = ");
         scanf("%f", &time[i]);
     }
 
