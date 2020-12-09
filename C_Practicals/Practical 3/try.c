@@ -1,18 +1,19 @@
 #include <stdio.h>
 
 int main()
-
 {
-
-    int a;
-    int x = 0;
-    printf("Enter number till which you want the addition = ");
-    scanf("%d", &a);
-
-    for (int i = 1; i <= a; i++)
+    char str = '1';
+    switch (str)
     {
-        x = x + i;
+    case '1':
+        return 1;
+        break;
+    case '2':
+        return 2;
+        break;
+    case '3':
+        return 3;
+        break;
     }
-    printf("Addition is = %d", x);
     return 0;
 }

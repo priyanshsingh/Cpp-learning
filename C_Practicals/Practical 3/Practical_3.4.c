@@ -14,25 +14,25 @@ int main()
     printf("\n");
 
     int per = (m * 100) / n;
-    printf("%d %d %d", m, n, per);
+    printf("Percentage of students who pulled the chain is %d\n", per);
 
     if (per >= 80)
     {
-        printf("\nStrict action is required to restrict this event.");
+        printf("\nStrict action is required to restrict this event.\n");
     }
 
     else if (per >= 50 && per < 80)
     {
-        printf("\nGuidelines should be issued");
+        printf("\nGuidelines should be issued\n");
     }
 
     else if (per >= 10 && per < 50)
     {
-        printf("\nRequest to restrict this event.");
+        printf("\nRequest to restrict this event.\n");
     }
     else
     {
-        printf("\nNo action required.");
+        printf("\nNo action required.\n");
     }
 
     return 0;

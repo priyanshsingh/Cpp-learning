@@ -3,25 +3,26 @@
 
 int main()
 {
-    float a, p, q, girls, boys;
+    float a, p, q, per_girls, per_boys;
+    int girls, boys;
 
-	printf("Enter total students = ");
+    printf("Enter total students = ");
     scanf("%f", &a);
 
     printf("Enter ratio of girls/boys = ");
     scanf("%f%f", &p, &q);
     girls = (p * a) / (p + q);
 
-    printf("\nPercentage of girls = %0.2f", girls);
+    printf("\nNumber of girls = %d", girls);
     boys = (q * a) / (p + q);
-    printf("\nPercentage of boys = %0.2f", boys);
+    printf("\nNumber of boys = %d\n", boys);
 
-    int per_boys = (boys * 100) / (boys + girls);
-	int per_girls = (girls * 100) / (boys + girls);    
-    
-	printf("\n\nPercentage of boys = %d", per_boys);
-    printf("\nPercentage of girls = %d", per_girls);
-    printf("\n");
+    per_boys = (boys * 100) / (boys + girls);
+    per_girls = (girls * 100) / (boys + girls);
+
+    printf("\nPercentage of girls = %0.2f", per_girls);
+    printf("\nPercentage of boys = %0.2f", per_boys);
+    printf("\n\n");
 
     int diff = abs(boys - girls);
 
