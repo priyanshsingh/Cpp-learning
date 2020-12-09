@@ -5,7 +5,7 @@ int main()
 {
 
     int n;
-    printf("Enter no of goods = ");
+    printf("Enter the total number of goods = ");
     scanf("%d", &n);
 
     float price[n], x, y, p, sum = 0;
