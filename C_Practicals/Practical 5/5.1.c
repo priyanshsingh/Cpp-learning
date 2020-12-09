@@ -1,44 +1,31 @@
 #include <stdio.h>
-#define n 5
 
 int main()
 
 {
-    printf("Enter no of persons : ");
     int m;
+    printf("Enter number of persons = ");
     scanf("%d", &m);
-    m = n;
-    float amount[n], p, q, r;
+    float amount[m], p, q, r;
 
-    puts("Enter amount of each person...");
+    printf("Enter amount held by each person = \n");
 
-    for (int i = 0; i < n; i++)
-
+    for (int i = 0; i < m; i++)
     {
-
         printf("%d : ", i + 1);
-
         scanf("%f", &amount[i]);
     }
 
     for (r = 1; r <= amount[0]; r++)
-
         for (q = 1; q <= amount[0]; q++)
-
             for (p = 1; p <= amount[0]; p++)
-
                 if ((r * 1 + q * 0.50 + p * 0.25) == amount[0])
+                    goto label;
 
-                    goto A;
-
-A:
-
-    printf("Person 1 Rs 50 paise 25 paise\n");
-
-    for (int i = 0; i < n; i++)
-
+label:
+    printf("Person\tRs. 1\t50 Paise\t25 Paise\n");
+    for (int i = 0; i < m; i++)
     {
-
         printf("%d %11.0f %7.0f %11.0f \n", i + 1, r * (amount[i] / amount[0]), q * (amount[i] / amount[0]), p * (amount[i] / amount[0]));
     }
 
