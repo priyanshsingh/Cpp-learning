@@ -29,7 +29,7 @@ int main()
         }
     }
 
-    printf("Updated arrangement = ");
+    printf("Updated arrangement of the given series = ");
 
     for (int i = 0; i < n; i++)
         printf("%d ", a[i]);
