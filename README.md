@@ -18,6 +18,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Assignment
          * Terenary Or Conditional
     * Conditionals
+    * Hoto Statements
     * Loops
     * Arrays
          * 2-D Arrays
@@ -49,6 +50,8 @@ In this repository those files are consisted which I made while taking *C* and *
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
     * Number Patterns
+    * Pyramid Patterns
+    * Double pyramids
 3. Basic Learner Questions (generally based on loops and conditionals
     * Temperature Scale Chnage
     * Decimal to Binary
