@@ -1,17 +1,12 @@
 #include <stdio.h>
 
 int main()
-
 {
-
     int n;
-
     printf("Enter size of array : ");
-
     scanf("%d", &n);
 
     int a[n], x;
-
     printf("Enter %d numbers for the array = ", n);
 
     for (int i = 0; i < n; i++)
