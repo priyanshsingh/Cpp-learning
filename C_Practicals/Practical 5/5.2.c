@@ -118,6 +118,25 @@ int main()
         }
 
         break;
+    case 4:
+        printf("Transpose of matrix 1 = \n");
+        for (int i = 0; i < m; i++)
+        {
+            for (int j = 0; j < l; j++)
+                printf("%d\t", matrix1[j][i]);
+            printf("\n\n");
+        }
+        printf("Transpose of matrix 2 = \n");
+        for (int i = 0; i < q; i++)
+        {
+            for (int j = 0; j < p; j++)
+                printf("%d\t", matrix2[j][i]);
+            printf("\n\n");
+        }
+        break;
+    default:
+        printf("Enter a choice between 1 to 4!!!");
+        break;
     }
     return 0;
 }
