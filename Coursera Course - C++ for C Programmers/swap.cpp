@@ -1,14 +1,14 @@
 #include <iostream>
 using namespace std;
 
-void swap(int &i, int &j)
+inline void swap(int &i, int &j)
 {
     int temp = i;
     i = j;
     j = temp;
 }
 
-void swap_double(double &i, double &j)
+inline void swap_double(double &i, double &j)
 {
     double temp = i;
     i = j;
