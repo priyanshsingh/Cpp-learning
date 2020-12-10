@@ -1,30 +1,31 @@
 #include <iostream>
-usin namespace std;
+using namespace std;
 
-void swap(int *i, int *j)
+void swap(int &i, int &j)
 {
-    int temp = *i;
-    *i = *j;
-    *j = temp;
+    int temp = i;
+    i = j;
+    j = temp;
 }
 
-void swap_double(double *i, double *j)
+void swap_double(double &i, double &j)
 {
-    double temp = *i;
-    *i = *j;
-    *j = temp;
+    double temp = i;
+    i = j;
+    j = temp;
 }
 
 int main()
 {
     int m = 5, n = 10;
-    printf("\nInput: %d and %d", m, n);
-    swap(&m, &n);
-    printf("\nOutput: %d and %d", m, n);
+    cout << "\nInput: " << m << " & " << n;
+    swap(m, n);
+    cout << "\nOutput: " << m << " & " << n;
 
     double x = 5.6, y = 10.8;
-    printf("\n\nDouble Input: %0.2lf and %0.2lf", x, y);
-    swap_double(&x, &y);
-    printf("\nDouble Output: %0.2lf and %0.2lf\n", x, y);
+    cout << "\n\nDouble Input: " << x << " & " << y;
+    swap_double(x, y);
+    cout << "\n\nDouble Output: " << x << " & " << y;
+
     return 0;
 }
