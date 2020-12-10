@@ -1,4 +1,4 @@
-
+//C++ has the feature of function overloading so, we can use the same name of two or more functions.
 
 #include <iostream>
 using namespace std;
