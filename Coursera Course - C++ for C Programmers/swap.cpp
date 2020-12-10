@@ -1,4 +1,5 @@
-#include <stdio.h>
+#include <iostream>
+usin namespace std;
 
 void swap(int *i, int *j)
 {
