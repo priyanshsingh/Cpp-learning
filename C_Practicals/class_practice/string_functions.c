@@ -19,6 +19,8 @@ int main()
 
     printf("\n\n%s", strcpy(name, name1));
 
+    printf("\n\n%s", strncpy(name, name1, 4));
+
     printf("\n\n%d", strcmp(name, name1));
 
     return 0;

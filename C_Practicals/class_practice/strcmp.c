@@ -7,11 +7,12 @@ int main()
     gets(a);
     printf("\nEnter second string: ");
     gets(b);
+    printf("\n%d\n", strcmp(a, b));
 
     if (strcmp(a, b) == 0)
-        printf("Strings are equal");
+        printf("\nStrings are equal\n");
     else
-        printf("Not Equal");
+        printf("\nNot Equal\n");
 
     return 0;
 }
