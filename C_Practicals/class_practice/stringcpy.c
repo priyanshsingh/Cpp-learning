@@ -1,16 +1,27 @@
 #include <stdio.h>
+
 #include <string.h>
 
 int main()
-{
-    char s[20], t[20];
-    printf("Enter the string = ");
-    gets(s);
 
-    for (int i = 0; s[i] != '\0'; i++)
+{
+
+    char s[20], b[20];
+
+    int i;
+
+    puts("Enter your string s:");
+
+    gets(s); //hello\0
+
+    for (i = 0; s[i] != '\0'; i++)
+
     {
-        s[i] = t[i];
+
+        b[i] = s[i];
     }
-    puts(t);
-    return 0;
+
+    b[i] = '\0';
+
+    puts(b);
 }
