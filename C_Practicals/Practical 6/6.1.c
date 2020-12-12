@@ -9,16 +9,19 @@
 
 // It contains at least one uppercase English character.
 
-// It contains at least one special character. The special characters are: !@#$%^&*()-+
+// It contains at least one special character. The special characters are: !    @   #   $   %   ^   &   *   (   )   -   +
 
 // She typed a random string of length n in the password field but wasnt sure if it was strong.
 // Given the string she typed, can you find the minimum number of characters she must add to make her password strong?
 
 #include <stdio.h>
 #include <string.h>
+#include <ctype.h>
 
 int main()
 {
+    int count = 0, flag = 0;
+
     char password[15];
     printf("Enter a password: \n");
     gets(password);
@@ -27,7 +30,8 @@ int main()
     {
         if (password[i] == ' ')
         {
-            printf("Remove spaces from the password!");
+            printf("\nRemove spaces from the password!\n");
+            goto label;
         }
     }
 
@@ -46,9 +50,30 @@ int main()
         printf("\nPassword length is strong!");
     }
 
-    for (int i = 0; password[i] == ' '; i++)
+    for (int i = 0; password[i] != '\0'; i++)
     {
-        printf("Remove spaces from the password!");
+        if (isdigit(password[i]) == 0)
+        {
+            count++;
+        }
     }
+    if (count == strlen(password))
+    {
+        printf("\nEnter numeric digits also!");
+    }
+
+    for (int i = 0; i < strlen(password); ++i)
+        if (password[i] == '!' || password[i] == '@' || password[i] == '#' || password[i] == '$' || password[i] == '%' || password[i] == '^' || password[i] == '&' || password[i] == '*' || password[i] == '(' || password[i] == ')' || password[i] == '-' || password[i] == '{' || password[i] == '}' || password[i] == '[' || password[i] == ']' || password[i] == ':' || password[i] == ';' || password[i] == '"' || password[i] == '\'' || password[i] == '<' || password[i] == '>' || password[i] == '.' || password[i] == '/' || password[i] == '?' || password[i] == '~' || password[i] == '`')
+        {
+            flag = 1;
+            break;
+        }
+    if (flag == 0)
+    {
+        printf("\nAdd Special Characters to your passowrd!\n");
+    }
+
+label:
+    printf("\nProgram terminated!\n   ");
     return 0;
 }
