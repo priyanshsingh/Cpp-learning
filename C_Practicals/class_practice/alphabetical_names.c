@@ -4,23 +4,30 @@
 int main()
 {
     char name[5][20];
+    char temp[20];
     for (int i = 0; i < 5; i++)
     {
         printf("\nEnter name of student number %d: ", i + 1);
         gets(name[i]);
     }
 
-    for (int i = 0, j = 0; i >= 0, j < 5; i++, j--)
+    for (int i = 0; i < 4; i++)
     {
-        if (strcmp(name[i], name[j]) > 0)
+        for (int j = i + 1; j < 5; j++)
         {
-            strcpy(name[i], name[j]);
+            if (strcmp(name[i], name[j]) > 0)
+            {
+                strcpy(temp, name[j]);
+                strcpy(name[j], name[i]);
+                strcpy(name[i], temp);
+            }
         }
     }
 
+    printf("\n********************Names of students in Alphabetical order are: ********************\n");
+
     for (int i = 0; i < 5; i++)
     {
-        printf("\nNames of students in Alphabetical order are: \n", i + 1);
         puts(name[i]);
     }
 
