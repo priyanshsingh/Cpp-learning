@@ -20,6 +20,7 @@ In this repository those files are consisted which I made while taking *C* and *
     * Conditionals
     * Hoto Statements
     * Loops
+    * Strings
     * Arrays
          * 2-D Arrays
          * Matrix input and operations
