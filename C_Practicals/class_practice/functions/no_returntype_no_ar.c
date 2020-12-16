@@ -1,13 +1,16 @@
 #include <stdio.h>
 
-void show()
+void sum()
 {
-    printf("\nHello\n");
+    int a, b;
+    printf("Enter a and b: ");
+    scanf("%d %d", &a, &b);
+    printf("Addition is = %d", a + b);
 }
 
 int main()
 {
-    printf("This is an example of a function with no return type and ni argument!");
-    show();
+    sum();
+
     return 0;
 }
