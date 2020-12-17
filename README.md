@@ -95,5 +95,6 @@ In this repository those files are consisted which I made while taking *C* and *
     * Using Random Function
     * Used Structures 
     * Strings
+    * String Functions
     * Array of Structures
 
