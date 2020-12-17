@@ -94,5 +94,6 @@ In this repository those files are consisted which I made while taking *C* and *
     * Adding libraries like math.h and conio.h
     * Using Random Function
     * Used Structures 
+    * Strings
     * Array of Structures
 
