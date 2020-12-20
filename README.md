@@ -86,6 +86,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Do While Loop
     * Binary Code
     * Conditionals
+    * Functions
     * Recursion
     * toupper anf tolower functions
     * Flowcharts from LucidCharts
