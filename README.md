@@ -98,6 +98,6 @@ In this repository those files are consisted which I made while taking *C* and *
     * Strings
     * String Functions
          * Strcmp
-
+         * Stricmp
     * Array of Structures
 
