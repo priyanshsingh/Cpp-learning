@@ -99,5 +99,6 @@ In this repository those files are consisted which I made while taking *C* and *
     * String Functions
          * Strcmp
          * Stricmp
+         * Strcpy
     * Array of Structures
 
