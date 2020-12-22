@@ -102,5 +102,6 @@ In this repository those files are consisted which I made while taking *C* and *
          * Strcpy
          * Strlen
          * Strcat
+         * Strncat
     * Array of Structures
 
