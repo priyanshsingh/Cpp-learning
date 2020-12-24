@@ -46,7 +46,6 @@ In this repository those files are consisted which I made while taking *C* and *
          * Destructors
          * Pointers to Object
          * Friend Functions
-
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
