@@ -1,7 +1,7 @@
 <img src = "https://github.com/priyanshsingh/Cpp-learning/blob/master/Cpp.png"/>
 
 
-># **C++ Online Learning**
+># **C/C++ Online Learning**
 
 In this repository those files are consisted which I made while taking *C* and *C++* lessons online.
 
