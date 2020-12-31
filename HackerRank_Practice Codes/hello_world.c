@@ -9,11 +9,7 @@ int main()
     char s[100];
     scanf("%[^\n]%*c", &s);
 
-    printf("Hello, World!");
-    int i = 0;
-    while (s[i] != '\0')
-    {
-        printf("%c", s[i]);
-    }
+    printf("Hello, World!\n");
+    puts(s);
     return 0;
 }
