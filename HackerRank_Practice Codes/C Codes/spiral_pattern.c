@@ -69,5 +69,6 @@ int main()
     int n;
     scanf("%d", &n);
     pattern(n);
+
     return 0;
 }
