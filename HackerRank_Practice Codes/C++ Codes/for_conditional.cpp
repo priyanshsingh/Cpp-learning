@@ -8,55 +8,55 @@ int main()
     cin >> a >> b;
     for (int i = a; i <= b; i++)
     {
-        if (a <= 9)
+        if (i <= 9)
         {
-            if (a == 1)
+            if (i == 1)
             {
-                cout << "one";
+                cout << "one" << endl;
             }
-            if (a == 2)
+            if (i == 2)
             {
-                cout << "two";
+                cout << "two" << endl;
             }
-            if (a == 3)
+            if (i == 3)
             {
-                cout << "three";
+                cout << "three" << endl;
             }
-            if (a == 4)
+            if (i == 4)
             {
-                cout << "four";
+                cout << "four" << endl;
             }
-            if (a == 5)
+            if (i == 5)
             {
-                cout << "five";
+                cout << "five" << endl;
             }
-            if (a == 6)
+            if (i == 6)
             {
-                cout << "six";
+                cout << "six" << endl;
             }
-            if (a == 7)
+            if (i == 7)
             {
-                cout << "seven";
+                cout << "seven" << endl;
             }
-            if (a == 8)
+            if (i == 8)
             {
-                cout << "eight";
+                cout << "eight" << endl;
             }
-            if (a == 9)
+            if (i == 9)
             {
-                cout << "nine";
+                cout << "nine" << endl;
             }
         }
-        if (a > 9)
+        if (i > 9)
         {
 
-            if (a % 2 == 0)
+            if (i % 2 == 0)
             {
-                cout << "even";
+                cout << "even" << endl;
             }
             else
             {
-                cout << "odd";
+                cout << "odd" << endl;
             }
         }
     }
