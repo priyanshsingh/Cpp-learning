@@ -23,15 +23,15 @@ int main()
         printf("\nEnter informantion of Patient %d\n", i + 1);
         printf("\nName = ");
         scanf("%s", &pt[i].name);
-        printf("\nPatient ID = ");
+        printf("Patient ID = ");
         scanf("%d", &pt[i].id);
-        printf("\nBlood Group = ");
+        printf("Blood Group = ");
         scanf("%s", &pt[i].blood);
-        printf("\nContact Number = ");
+        printf("Contact Number = ");
         scanf("%lld", &pt[i].number);
-        printf("\nName of Disease = ");
+        printf("Name of Disease = ");
         scanf("%s", &pt[i].disease);
-        printf("\nDate = ");
+        printf("Date = ");
         scanf("%d", &pt[i].date);
     }
 
