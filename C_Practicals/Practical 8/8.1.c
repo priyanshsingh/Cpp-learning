@@ -1,30 +1,35 @@
-//WAP to read an array of elements and print the same in the reverse order along with their addresses using pointer.
-
 #include <stdio.h>
 
 int main()
+
 {
-    int i;
-    int arr1[10];
-    printf("Enter 10 digits of your phone number = ");
 
-    for (i = 0; i < 10; i++)
-    {
-        scanf("%d", &arr1[i]);
-    }
-
-    printf("Phone number in same order is = ");
-
-    for (i = 0; i < 10; i++)
-    {
-        printf("%d", arr1[i]);
-    }
-
+    int n;
     int *ptr;
-    for (int j = 9; j >= 0; j--)
+
+    printf("Number of elements to be entered = ");
+    scanf("%d", &n);
+
+    int array1[10];
+
+    ptr = &array1[0];
+    printf("\nEnter %d elements for the array: \n", n);
+
+    int i;
+
+    for (i = 0; i < n; i++, ptr++)
     {
-        ptr = &arr1[i];
-        printf("%d", *ptr);
+        printf("Element number %d = ", i + 1);
+        scanf("%d", ptr);
+    }
+
+    ptr = &array1[n - 1];
+    printf("\nReversed Array: \n");
+
+    for (i = n; i > 0; i--)
+    {
+        printf("%d. %d\n", i, *ptr);
+        ptr--;
     }
 
     return 0;
