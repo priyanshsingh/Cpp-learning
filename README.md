@@ -7,6 +7,7 @@ In this repository those files are consisted which I made while taking *C* and *
 
 
 >## **Contents** :
+
 1. Fundamentals
     * Hello World
     * Presidency / Priority series
