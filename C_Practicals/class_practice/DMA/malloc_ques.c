@@ -18,7 +18,7 @@ int main()
     else
     {
         printf("\nMEMORY SUCCESSFULLY ALLOCATED USING MALLOC\n");
-        printf("\nEnter %d Elements for the array:\n", n);
+        printf("\nEnter %d elements for the array:\n", n);
 
         for (int i = 0; i < n; i++)
         {
