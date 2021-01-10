@@ -11,7 +11,7 @@ int main()
 
     ptr = (int *)malloc(n * sizeof(int));
 
-    printf("\nEnter Roll numbers for %d students: \n", n);
+    printf("\nEnter Roll Numbers for %d students: \n", n);
     for (i = 0; i < n; i++)
     {
         scanf("%d", &ptr[i]);
