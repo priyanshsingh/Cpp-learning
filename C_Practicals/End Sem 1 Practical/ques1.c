@@ -2,18 +2,18 @@
 
 int answer(int n)
 {
-    int ones, end;
+    int first, end;
     end = n % 10;
-    ones = n;
+    first = n;
 
     while (n >= 10)
     {
         n = n / 10;
     }
-    ones = n;
+    first = n;
 
     int sum;
-    sum = ones + end;
+    sum = first + end;
     return sum;
 }
 
