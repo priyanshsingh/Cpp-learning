@@ -5,7 +5,7 @@
 ># **C/C++ Online Learning**
 
 In this repository those files are consisted which I made while taking *C* and *C++* lessons online.
-
+All file are in various folders. 
 
 >## **Contents** :
 
