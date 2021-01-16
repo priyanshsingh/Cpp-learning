@@ -112,3 +112,4 @@ All file are in various folders.
     * Dynamic Memory Allocation
          * Malloc
          * Calloc
+         * Realloc
