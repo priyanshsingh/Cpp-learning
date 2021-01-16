@@ -110,4 +110,4 @@ All file are in various folders.
          * Strncat
     * Array of Structures
     * Dynamic Memory Allocation
-
+         * Malloc
