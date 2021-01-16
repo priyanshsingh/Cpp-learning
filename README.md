@@ -111,6 +111,7 @@ All file are in various folders.
     * Array of Structures
     * Storage Classes
          * Auto
+         * Static
     * Dynamic Memory Allocation
          * Malloc
          * Calloc
