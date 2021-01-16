@@ -113,3 +113,4 @@ All file are in various folders.
          * Malloc
          * Calloc
          * Realloc
+         * Free
