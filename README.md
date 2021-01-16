@@ -109,6 +109,7 @@ All file are in various folders.
          * Strcat
          * Strncat
     * Array of Structures
+    * Storage Classes
     * Dynamic Memory Allocation
          * Malloc
          * Calloc
