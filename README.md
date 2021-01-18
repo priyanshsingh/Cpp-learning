@@ -112,7 +112,7 @@ All file are in various folders.
     * Storage Classes
          * Auto
          * Static
-    * Dynamic Memory Allocation
+    * Dynamic Memory Allocation(DMA)
          * Malloc
          * Calloc
          * Realloc
