@@ -8,7 +8,7 @@ All file are in various folders.
 
 >## **Contents** :
 
-1. Fundamentals
+1. Fundamentals/Basics
     * Hello World
     * Presidency / Priority series
     * Data Types
