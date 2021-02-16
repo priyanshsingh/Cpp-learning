@@ -1,14 +1,14 @@
 <img src = "https://github.com/priyanshsingh/Cpp-learning/blob/master/Cpp.png"/>
 
-
-># **C/C++ Online Learning**
+># **C/C++ Online Learning Repository**
 
 In this repository those files are consisted which I made while taking *C* and *C++* lessons online.
 All file are in various folders. 
 
 >## **Contents** :
 
-1. Fundamentals
+1. Fundamentals/Basics
+
     * Hello World
     * Presidency / Priority series
     * Data Types
