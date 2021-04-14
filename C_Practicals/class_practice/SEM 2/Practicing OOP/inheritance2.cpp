@@ -27,6 +27,10 @@ private:
     int z;
 };
 
+class MyDerivedClass : public MyBaseClass
+{
+};
+
 void MyOutsideFunction(MyBaseClass obj)
 {
     cout << "x: " << obj.x << endl;
@@ -37,6 +41,8 @@ void MyOutsideFunction(MyBaseClass obj)
 int main()
 {
     MyBaseClass obj1;
-    MyOutsideFunction(obj1);
+    MyDerivedClass obj2;
+    cout << "X = " << obj2.x;
+
     return 0;
 }
