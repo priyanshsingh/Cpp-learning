@@ -7,13 +7,11 @@ void linearSearch(int arr[], int n, int k)
     for(int j = 0; j < n ; j++)
     {
             iterate = iterate + 1;
-
         if(arr[j] == k)
         {
             found = 1;
             cout << "Element found on the index number = "<< j <<endl <<endl;
             cout << "Number of iterations = "<< iterate <<endl <<endl;
-
         }
     }
     if(found == 0)
