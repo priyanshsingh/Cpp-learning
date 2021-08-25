@@ -73,20 +73,44 @@ int main()
     cout << "Enter the method for searching the element(TYPE 1 OR 2) : \n1. LINEAR SEARCH.\n2. BINARY SEARCH.";
     cin >> choice;
 
-    if(choice == 1){
-        linearSearch(arr, n, k);
-    }
-    else if(choice == 2){
-        output = binary_Search(arr, n, k);
-        if(output == -1){
-            cout << "Element was not found in the array !";
-            }
-            else{   
-        cout << "Match found at index position "<<output<<endl;
+    switch (choice)
+    {
+        case 1: {
+                    linearSearch(arr, n, k);
         }
+                break;
+
+        case 2: {
+             output = binary_Search(arr, n, k);
+                if(output == -1){
+                    cout << "Element was not found in the array !";
+                 }
+                else{   
+                    cout << "Match found at index position "<<output<<endl;
+                }
+                break;
+        }
+        default: {
+            cout << "WRONG CHOICE ENTERED !";
+        }
+                break;
+
     }
-    else{
-        cout << "WRONG CHOICE ENTERED !";
-    }    
+
+    // if(choice == 1){
+    //     linearSearch(arr, n, k);
+    // }
+    // else if(choice == 2){
+    //     output = binary_Search(arr, n, k);
+    //     if(output == -1){
+    //         cout << "Element was not found in the array !";
+    //         }
+    //         else{   
+    //     cout << "Match found at index position "<<output<<endl;
+    //     }
+    // }
+    // else{
+    //     cout << "WRONG CHOICE ENTERED !";
+    // }    
     return 0;
 }
