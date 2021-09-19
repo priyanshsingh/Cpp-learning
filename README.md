@@ -1,11 +1,14 @@
 <img src = "https://github.com/priyanshsingh/Cpp-learning/blob/master/Cpp.png"/>
 
-># **C++ Online Learning**
+># **C/C++ Online Learning Repository**
 
 In this repository those files are consisted which I made while taking *C* and *C++* lessons online.
+All file are in various folders. 
 
 >## **Contents** :
-1. Fundamentals
+
+1. Fundamentals/Basics
+
     * Hello World
     * Presidency / Priority series
     * Data Types
@@ -25,6 +28,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * 2-D Arrays
          * Matrix input and operations
     * Pointers
+         * Types of pointers
     * Dynamic Memory Allocation
     * Functions
          * Inline Functions
@@ -46,7 +50,6 @@ In this repository those files are consisted which I made while taking *C* and *
          * Destructors
          * Pointers to Object
          * Friend Functions
-
 2. Patterns
     * Simple Right Angled Triangle Pattern
     * Diamond Pattern
@@ -86,6 +89,7 @@ In this repository those files are consisted which I made while taking *C* and *
          * Do While Loop
     * Binary Code
     * Conditionals
+    * Functions
     * Recursion
     * toupper anf tolower functions
     * Flowcharts from LucidCharts
@@ -94,5 +98,21 @@ In this repository those files are consisted which I made while taking *C* and *
     * Adding libraries like math.h and conio.h
     * Using Random Function
     * Used Structures 
+    * Strings
+    * String Functions
+         * Strcmp
+         * Stricmp
+         * Strncmp
+         * Strcpy
+         * Strlen
+         * Strcat
+         * Strncat
     * Array of Structures
-
+    * Storage Classes
+         * Auto
+         * Static
+    * Dynamic Memory Allocation(DMA)
+         * Malloc
+         * Calloc
+         * Realloc
+         * Free
