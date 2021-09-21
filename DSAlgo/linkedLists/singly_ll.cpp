@@ -1,12 +1,3 @@
-/*
-Singly Linked Lists
-1. appendNode
-2. prependNode
-3. insertNodeAfter
-4. deleteNodeBefore
-5. updateNodeByKey
-6.print
-*/
 #include <iostream>
 using namespace std;
 
