@@ -38,6 +38,20 @@ struct Node * insert_at_index(struct Node * head, int data, int index)
     return head; 
 }
 
+struct Node * insert_at_end(struct Node * head, int data)
+{
+    struct Node * insert = new Node;
+    struct Node * ptr = head;
+    while (ptr->next != NULL)
+    {
+        ptr = ptr->next;
+    }
+    insert->data = data;
+    ptr->next = insert;
+    insert->next = NULL;
+    return head;
+}
+
 int main()
 {
     struct Node * head = new Node;
@@ -67,6 +81,10 @@ int main()
 
     cout <<"\nAFTER INSETION AT INDEX:\n";    
     head = insert_at_index(head, 154, 4);
+    traverse(head);
+
+    cout <<"\nAFTER INSETION AT INDEX:\n";    
+    head = insert_at_end(head, 1234);
     traverse(head);
 
 
