@@ -4,7 +4,7 @@ using namespace std;
 
 struct Node{
     int data;
-    struct Node * next;
+    struct Node *next;
 };
 
 void linked_List_Traversal(struct Node * ptr){
@@ -17,17 +17,11 @@ void linked_List_Traversal(struct Node * ptr){
 
 int main()
 {
-    struct Node * head;
-    struct Node * second;
-    struct Node * third;
-    struct Node * fourth;
-
-
-    head = (struct Node *)malloc(sizeof(struct Node));
-    second = (struct Node *)malloc(sizeof(struct Node));
-    third = (struct Node *)malloc(sizeof(struct Node));
-    fourth = (struct Node *)malloc(sizeof(struct Node));
-
+    struct Node* head = new Node;
+    struct Node* second = new Node;
+    struct Node* third = new Node;
+    struct Node* fourth = new Node;
+    
     head->data = 7;
     head->next = second;
 
