@@ -65,6 +65,10 @@ int main()
     head = insert_at_beginning(head, 123);
     traverse(head);
 
+    cout <<"\nAFTER INSETION AT INDEX:\n";    
+    head = insert_at_index(head, 154, 4);
+    traverse(head);
+
 
 
 
