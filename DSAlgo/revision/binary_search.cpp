@@ -18,7 +18,6 @@ int binary_search(int arr[], int n, int k){
         }
     } 
     return -1;
-
 }
 
 
@@ -46,7 +45,7 @@ int main()
     cin >> k;
 
     int searchIndex = binary_search(arr, n, k);
-    cout << "The element "<< k <<"was found at index " << searchIndex;
+    cout << "The element "<< k <<"was found at index = " << searchIndex;
     return 0;
     
 
