@@ -13,7 +13,6 @@ void ll_traversal(struct Node *ptr){
         cout << "Element: " << ptr->data <<endl;
         ptr = ptr->next;
     }
-    
 }
 
 struct Node * insert_at_beginning(struct Node * head, int data){
@@ -79,8 +78,6 @@ int main()
     cout <<"\nAFTER INSETION AT INDEX:\n";    
     head = insert_in_between(head , 2, 3);
     ll_traversal(head);
-
-
 
     return 0;
 }

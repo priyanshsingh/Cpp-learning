@@ -17,11 +17,12 @@ int main()
         {
             if (arr[j + 1] < arr[j])
             {
-                count++;
                 int temp = arr[j + 1];
                 arr[j + 1] = arr[j];
                 arr[j] = temp;
             }
+            count++;
+
         }
     }
     cout << "\nArray after sort : \n\n";
