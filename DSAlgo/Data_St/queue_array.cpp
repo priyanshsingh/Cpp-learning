@@ -17,7 +17,7 @@ class Queue
             {
                 arr[i]==0;
             }
-        }
+        }   
 
         bool isEmpty()
         {
