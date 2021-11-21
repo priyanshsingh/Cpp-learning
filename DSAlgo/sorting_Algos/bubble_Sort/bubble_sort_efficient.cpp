@@ -5,6 +5,7 @@ void bubble_sort(int n, int arr[]){
     int swap = 0;
     for (int i = 0; i < n; i++)
     {
+        int flag = 0;
         for (int j = 0; j < n-i-1; j++)
         {
             if (arr[j] > arr[j+1])
@@ -12,16 +13,22 @@ void bubble_sort(int n, int arr[]){
                 int temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
+                flag = 1;
                 swap++;
             }   
         }
+        if (flag == 0)
+        {
+            break;
+        }
+        
     }
     cout << "Array after sorting: \n";
     for (int k = 0; k < n; k++)
     {
         cout << "Element " << k+1 << " = " << arr[k] << endl;
     }
-        cout << "Number of swaps that occured = " << swap;
+    cout << "Number of swaps that occured = " << swap;
 }
 
 int main(){
