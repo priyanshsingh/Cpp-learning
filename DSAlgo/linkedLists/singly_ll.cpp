@@ -33,7 +33,7 @@ class SinglyLinkedList{
              head = n; 
         }
 
-//Check if node exists using key value
+//Check if node exists using key value.
         Node* nodeExists(int k)
         {
               Node* temp = NULL;
