@@ -84,6 +84,8 @@ int main(){
 
     do
     {
+        cout << "Hello Guys";
+        cout << "Welcome to my Code!!!\n";
         cout << "\n************************STACK**************************\n";
         cout << "Enter a suitable number to perform the following operations!!!.\nEnter 0 to exit!!!\n";
         cout << "1. Push()\n";
@@ -120,8 +122,6 @@ int main(){
             break;
         }
     } while (choice!=0);
-    
- 
 
     return 0;
 }
