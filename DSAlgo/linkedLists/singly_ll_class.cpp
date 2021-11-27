@@ -15,7 +15,7 @@ void showList(struct Node* ptr)
 
 int main(){
     int n=0;
-    cout<<"Enter the number of Linked List to be created!"<<endl;
+    cout<<"Enter the number of Linked List nodes to be created!"<<endl;
     cin>>n;
     struct Node *head=new Node();
     struct Node *prev=new Node();
