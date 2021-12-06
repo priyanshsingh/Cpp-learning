@@ -18,16 +18,27 @@ void Display_linked_list(struct Node * ptr){
 struct Node * insert_at_beginning(int value, struct Node * head)
 {
     printf("insert_at_beginning function called successfully!!!\n\n");
-    struct Node * new_node = (struct Node *)malloc(sizeof(struct Node));
-    new_node->next = head;
-    new_node->data = value;
-    return new_node;
-
+    struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
+    ptr->next = head;
+    ptr->data = value;
+    return ptr;
 }
 
-void insert_in_between(int value, int index)
+struct Node * insert_in_between(int value, int index, struct Node * head)
 {
     printf("insert_in_between function called successfully!!!\n\n");
+    struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
+    struct Node * p = head;
+    int i = 0;
+    while(i != index-1)
+    {
+        p = p->next;
+        i++;
+    }
+    ptr->data = value;
+    ptr->next = p->next;
+    p->next = ptr;
+    return head;
 }
 
 void insert_at_end(int value)
@@ -88,7 +99,7 @@ int main()
             scanf("%d", &item);
             printf("Enter the index value = ");
             scanf("%d", &index);
-            insert_in_between(item, index);
+            head = insert_in_between(item, index, head);
             break;
         
         case 3:
