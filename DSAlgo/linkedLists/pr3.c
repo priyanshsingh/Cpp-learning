@@ -41,15 +41,33 @@ struct Node * insert_in_between(int value, int index, struct Node * head)
     return head;
 }
 
-void insert_at_end(int value)
+struct Node * insert_at_end(int value, int index, struct Node * head)
 {
     printf("insert_at_end function called successfully!!!\n\n");
+    struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
+    struct Node * p = head;
+    ptr->data = value;
+
+    while (p->next!=NULL)
+    {
+        p = p->next;
+    }
+    p->next = ptr;
+    ptr->next = NULL;
+    return head;
 }
 
-void insert_after_node(int value)
+
+struct Node * insert_after_node(int value, struct Node * prevNode, struct Node * head)
 {
     printf("insert_after_node function called successfully!!!\n\n");
+    struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
+    ptr->data = value;
+    ptr->next = prevNode->next;
+    prevNode->next = ptr;
+    return head;
 }
+
 
 int main()
 {
@@ -105,13 +123,13 @@ int main()
         case 3:
             printf("Enter the number to be inserted at the end = ");
             scanf("%d", &item);
-            insert_at_end(item);
+            head = insert_at_end(item, index, head);
             break;
         
         case 4:
             printf("Enter the number to be inserted after a node = ");
             scanf("%d", &item);
-            insert_after_node(item);
+            head = insert_after_node(item, second, head);
             break;
         
         case 5:
