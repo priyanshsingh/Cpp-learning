@@ -20,11 +20,6 @@ class Node{
         }
 };
 
-class Singly_Linked_List()
-{
-    
-};
-
 int main(){
 
 

@@ -9,7 +9,7 @@ struct Node{
 
 void Display_linked_list(struct Node * ptr){
     printf("Display_linked_list function called successfully!!!\n");
-    while(ptr->next!=NULL)
+    while(ptr!=NULL)
     {
         printf("%d --> ", ptr->data);
         ptr = ptr->next;
