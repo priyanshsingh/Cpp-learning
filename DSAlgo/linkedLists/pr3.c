@@ -129,7 +129,7 @@ int main()
         case 4:
             printf("Enter the number to be inserted after a node = ");
             scanf("%d", &item);
-            head = insert_after_node(item, second, head);
+            head = insert_after_node(item, third, head);
             break;
         
         case 5:
@@ -141,6 +141,7 @@ int main()
             break;
         
         default:
+            printf("Enter a valid choice!!!\n");
             break;
         }
     } while (choice!=0);
