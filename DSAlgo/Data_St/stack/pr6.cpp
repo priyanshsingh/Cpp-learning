@@ -32,7 +32,7 @@ class Stack{
         void push(int item)
         {
             if(isFull())
-                cout << "OVERFLOW!!!\n\n";
+                cout << "OVERFLOW!!!\nThe element was not pushed into the stack!!!\n\n";
             else
             {
                 cout << "Push Function called successfully!!!\n";
@@ -70,7 +70,33 @@ class Stack{
             }
             
         }
-        
+
+        int count()
+        {
+            int count = 0;
+            for (int k = 0; k < 10; k++)
+            {
+                if (arr[k]!=0)
+                {
+                    count++;
+                }
+                else
+                {
+                    continue;
+                }  
+            }
+            return count;
+        }
+
+        void emptyStack()
+        {
+            cout << "EmptyStack Function called successfully!!!\n\n";
+            for (int m = 0; m < 10; m++)
+            {
+                arr[m] = 0;
+            }
+            top = -1;
+        }
 };
 
 int main(){
@@ -88,6 +114,8 @@ int main(){
         cout << "5. IsFull" << endl;
         cout << "6. IsEmpty" << endl;
         cout << "7. Clear Screen" << endl;
+        cout << "8. Count" << endl;
+        cout << "9. Empty Stack" << endl;
         cin >> choice;
 
         switch (choice)
@@ -131,8 +159,16 @@ int main(){
             system("cls");
             break;
         
+        case 8: 
+            cout << "Number of Elements in the Stack = " << s1.count() << "\n\n";
+            break;
+        
+        case 9: 
+            s1.emptyStack();
+            break;
+        
         default:
-            cout << "Enter a valid choice between 1 and 7!!!\n\n";
+            cout << "Enter a valid choice from 1 to 9!!!\n\n";
             break;
         }
     } while (choice!=0);
