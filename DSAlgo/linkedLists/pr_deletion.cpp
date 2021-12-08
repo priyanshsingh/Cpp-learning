@@ -6,13 +6,14 @@ struct Node{
     struct Node * next;
 };
 
-void display(struct Node * ptr)
+void display(struct Node * head)
 {
+
     cout << "\n\nDisplay Function Called !!!\n\n";
-    while (ptr!=NULL)
+    while (head!=NULL)
     {
-        cout << ptr->data << " --> " ;
-        ptr = ptr->next;
+        cout << head->data << " --> " ;
+        head = head->next;
     }
     cout << "\n\n";
 }
@@ -69,6 +70,44 @@ struct Node * insert_at_index(struct Node * head, int value, struct Node * prevN
     return head;
 }
 
+struct Node * delete_first_node(struct Node * head){
+    struct Node * ptr = head;
+    cout << "Deleted Node contained the value = " << ptr->data;
+    head = head->next;
+    delete ptr;
+    return head;
+}
+
+struct Node * delete_at_index(struct Node * head, int index){
+    struct Node * ptr = head;
+    struct Node * p;
+    int i = 0;
+    while (i!=index-1)
+    {
+        ptr = ptr->next;
+        i++;
+    }
+    p = ptr->next;
+    ptr->next = p->next;
+    cout << "Deleted Node contained the value = " << p->data;
+    delete p;
+    return head;
+}
+
+struct Node * delete_last_Node(struct Node * head){
+    struct Node * p = head;
+    struct Node * q = head->next;
+    while (q->next!=NULL)
+    {
+        p = p->next;
+        q = q->next;
+    }
+    cout << "Deleted Node contained the value = " << q->data;
+    p->next = NULL;
+    delete q;
+    return head;
+}
+
 int main(){
     struct Node * head = new Node();
     struct Node * second = new Node();
@@ -103,7 +142,10 @@ int main(){
         cout << "3. insert_at_end()" << endl;
         cout << "4. insert_at_index()" << endl;
         cout << "5. display()" << endl;
-        cout << "6. clear_screen()" << endl << endl;
+        cout << "6. clear_screen()" << endl;
+        cout << "7. delete_first_node()" << endl;
+        cout << "8. delete_at_index()" << endl;
+        cout << "9. delete_last_Node()" << endl << endl;
         cin >> option;
 
         switch (option)
@@ -145,7 +187,25 @@ int main(){
             system("cls");
             break;
         
+        case 7:
+            cout << "Deleting the first Node!!!\n";
+            head = delete_first_node(head);
+            break;
+        
+        case 8:
+            cout << "Enter the index(0, 1, 2 and so on) of the node which is to be deleted = ";
+            cin >> item;
+            cout << "Deleting the node at index, " << index << endl;
+            head = delete_at_index(head, item);
+            break;
+        
+        case 9:
+            cout << "Deleting the Last Node!!!\n";
+            head = delete_last_Node(head);
+            break;
+
         default:
+            cout << "Enter a valid choice from 1-9\n\n";
             break;
         }
 
