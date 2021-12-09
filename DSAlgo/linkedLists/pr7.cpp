@@ -24,6 +24,67 @@ struct Node * insert_beginning(struct Node * head, int value)
     return ptr;
 }
 
+struct Node * insert_between(struct Node * head, int value, int index)
+{
+    cout << "insert_between() function called successfully!!!\n";
+    struct Node * ptr = new Node();
+    struct Node * p = head;
+    int i = 0;
+    while(i!=index-1)
+    {
+        p = p->next;
+        i++;
+    }
+    ptr->data = value;
+    ptr->next = p->next;
+    p->next = ptr;
+    return head;
+}
+
+struct Node * insert_end(struct Node * head, int value)
+{
+    cout << "insert_between() function called successfully!!!\n";
+    struct Node * ptr = new Node();
+    struct Node * p = head;
+    int i = 0;
+    while(p->next!=NULL)
+    {
+        p = p->next;
+    }
+    ptr->data = value;
+    p->next = ptr;
+    ptr->next = NULL;
+    return head;
+}
+
+struct Node * insert_at_index(struct Node * head, int value, struct Node * prevNode)
+{
+    cout << "insert_after_node function called successfully!!!\n\n";
+    struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
+    ptr->data = value;
+    ptr->next = prevNode->next;
+    prevNode->next = ptr;
+    return head;
+}
+
+struct Node * delete_first(struct Node * head)
+{
+    struct Node * ptr = head;
+    cout << "Deleted Node contained the value = " << ptr->data;
+    head = head->next;
+    delete ptr;
+    return head;
+}
+
+struct Node * delete_index(struct Node * head, int index)
+{
+    struct Node * ptr = head;
+    cout << "Deleted Node contained the value = " << ptr->data;
+    head = head->next;
+    delete ptr;
+    return head;
+}
+
 int main(){
     struct Node * head = new Node();
     struct Node * second = new Node();
@@ -45,6 +106,9 @@ int main(){
 
     fifth->data = 500;
     fifth->next = NULL;
+
+    display(head);
+
 
     int value, choice, index;
 
@@ -74,25 +138,41 @@ int main(){
             break;
         
         case 2:
+            cout << "Enter the number to be inserted = ";
+            cin >> value;
+            cout << "Enter the index = ";
+            cin >> index;
+            head = insert_between(head, value, index);
             break;
         
         case 3:
+            cout << "Enter the number to be inserted = ";
+            cin >> value;
+            head = insert_end(head, value);
             break;
         
         case 4:
+            cout << "Enter value to be inserted = ";
+            cin >> value;
+            head = insert_at_index(head, value, third);
+            break;
             break;
         
         case 5:
+            head = delete_first(head);
             break;
         
         case 6:
+            cout << "Enter the index = ";
+            cin >> index;
+            head = delete_index(head, index);
             break;
         
         case 7:
             break;
         
         case 8:
-        display(head);
+            display(head);
             break;
         
         case 9:
