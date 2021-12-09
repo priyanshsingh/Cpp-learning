@@ -79,9 +79,31 @@ struct Node * delete_first(struct Node * head)
 struct Node * delete_index(struct Node * head, int index)
 {
     struct Node * ptr = head;
-    cout << "Deleted Node contained the value = " << ptr->data;
-    head = head->next;
-    delete ptr;
+    struct Node * p;
+    int i = 0;
+    while (i!=index-1)
+    {
+        ptr = ptr->next;
+        i++;
+    }
+    p = ptr->next;
+    ptr->next = p->next;
+    cout << "Deleted Node contained the value = " << p->data;
+    delete p;
+    return head;
+}
+struct Node * delete_end(struct Node * head)
+{
+    struct Node * p = head;
+    struct Node * q = head->next;
+    while (q->next!=NULL)
+    {
+        p = p->next;
+        q = q->next;
+    }
+    cout << "Deleted Node contained the value = " << q->data;
+    p->next = NULL;
+    delete q;
     return head;
 }
 
@@ -169,6 +191,7 @@ int main(){
             break;
         
         case 7:
+            head = delete_end(head);
             break;
         
         case 8:
