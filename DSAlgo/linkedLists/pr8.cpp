@@ -25,11 +25,19 @@ struct Node * insert_at_beginning(struct Node * head, int item){
 }
 
 struct Node * insert_in_between(struct Node * head, int item, int index){
-    cout << "\nInsert At Beginning Function called!!!\n";
+    cout << "\nInsert in Between Function called!!!\n";
     struct Node * ptr = new Node();
+    struct Node * p = head;
+    int i = 0;
+    while (i!=index-1)
+    {
+        p = p->next;
+        i++;
+    }
     ptr->data = item;
-    ptr->next = head;
-    return ptr;
+    ptr->next = p->next;
+    p->next = ptr;
+    return head;
 }
 
 int main(){
