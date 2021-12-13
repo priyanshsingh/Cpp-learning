@@ -40,6 +40,35 @@ struct Node * insert_in_between(struct Node * head, int item, int index){
     return head;
 }
 
+struct Node * insert_at_end(struct Node * head, int item){
+    cout << "\nInsert at End Function called!!!\n";
+    struct Node * ptr = new Node();
+    struct Node * p = head;
+    while (p->next!=NULL)
+    {
+        p = p->next;
+    }
+    ptr->data = item;
+    p->next = ptr;
+    ptr->next = NULL;
+    return head;
+}
+
+struct Node * insert_at_index(struct Node * head, struct Node * prevNode, int item){
+    cout << "insert_after_node function called successfully!!!\n\n";
+    struct Node * ptr = (struct Node *)malloc(sizeof(struct Node));
+    ptr->data = item;
+    ptr->next = prevNode->next;
+    prevNode->next = ptr;
+    return head;
+}
+
+struct Node * delete_first(struct Node * head)
+{
+
+    return head;
+}
+
 int main(){
     int item, index, option;
     struct Node * head = new Node();
@@ -99,9 +128,15 @@ int main(){
             break;
         
         case 3:
+            cout << "\nEnter the number to be inserted in the linked list = ";
+            cin >> item;
+            head = insert_at_end(head, item);
             break;
         
         case 4:
+            cout << "\nEnter the number to be inserted in the linked list = ";
+            cin >> item;
+            head = insert_at_index(head, third, item);
             break;
         
         case 5:
