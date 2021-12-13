@@ -65,7 +65,41 @@ struct Node * insert_at_index(struct Node * head, struct Node * prevNode, int it
 
 struct Node * delete_first(struct Node * head)
 {
+    struct Node * p = head;
+    cout << "Deleted Node contained the value = " << p->data;
+    head = head->next;
+    delete p;
+    return head;
+}
 
+struct Node * delete_index(struct Node * head, int index)
+{
+    struct Node * ptr = head;
+    struct Node * p;
+    int i = 0;
+    while (i!=index-1)
+    {
+        ptr = ptr->next;
+        i++;
+    }
+    p = ptr->next;
+    ptr->next = p->next;
+    cout << "Deleted Node contained the value = " << p->data;
+    delete p;
+    return head;
+}
+struct Node * delete_end(struct Node * head)
+{
+    struct Node * p = head;
+    struct Node * q = head->next;
+    while (q->next!=NULL)
+    {
+        p = p->next;
+        q = q->next;
+    }
+    cout << "Deleted Node contained the value = " << q->data;
+    p->next = NULL;
+    delete q;
     return head;
 }
 
@@ -140,12 +174,20 @@ int main(){
             break;
         
         case 5:
+            cout << "Deleting the First Node!!!\n";
+            head = delete_first(head);
             break;
         
         case 6:
+            cout << "Enter the index = ";
+            cin >> index;
+            cout << "Deleting the Node at the position, " << index << endl << endl;
+            head = delete_index(head, index);
             break;
         
         case 7:
+            cout << "Deleting the Last Node!!!\n";
+            head = delete_end(head);
             break;
         
         case 8:
