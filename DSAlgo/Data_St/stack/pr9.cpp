@@ -69,7 +69,7 @@ class Stack
             cout << "Display function called successfully!\n";
             for (int i = 9; i >= 0; i--)
             {
-                cout << arr[i] << endl;
+                cout << arr[top] << endl;
             }
         }
 };

@@ -9,12 +9,12 @@ void linearSearch(int arr[], int n, int k)
         if(arr[j] == k)
         {
             found = 1;
-            cout << "Element found on the index number = "<< j <<endl <<endl;
+            cout << "Successfully, element was found on the index number = "<< j <<endl <<endl;
         }
     }
     if(found == 0)
     {
-        cout<<"Element was not found in the array!";
+        cout<<"Unsuccessfully, element was not found in the array!!!\n";
     }
 }
 
