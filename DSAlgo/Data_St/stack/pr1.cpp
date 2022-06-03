@@ -109,7 +109,7 @@ int main(){
         cin >> choice;
         switch (choice)
         {
-        case 0:
+        case 0: 
             break;
         case 1:
             cout << "Enter the value to be pushed = ";
@@ -141,7 +141,7 @@ int main(){
             s1.display();  
             break;
         case 6:
-            system("cls");
+            system("cls");  
             break;
 
         default:
