@@ -1,6 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+
 void printVector(vector<int> &v)
 {
     cout << "Size of vector = " << v.size() << endl;
@@ -11,7 +12,7 @@ void printVector(vector<int> &v)
     
 }
 
-int main(){
+int main(){ 
     int N;
     cout << "Enter size of array of vectors = ";
     cin >> N;
